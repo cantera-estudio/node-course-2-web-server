@@ -66,6 +66,15 @@ app.get('/about', (request, response) => {
 
 
 
+app.get('/projects', (request, response) => {
+	response.render('projects.hbs', {
+		headTitle: 'Projects page',
+		pageTitle: 'Welcome to our portolio'
+	});
+});
+
+
+
 app.get('/bad', (request, response) => {
 	response.send({
 		error: 'Oops... something went wrong'
